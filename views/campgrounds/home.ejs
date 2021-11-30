@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="stylesheet/home.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Roboto+Condensed&family=Zen+Antique&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-center text-white d-flex">
+    <div class="cover-container d-flex  flex-column h-100 w-100 mx-auto p-3">
+        <header class="mb-0">
+            <div>
+                <h1 class="float-md-start mb-0">YelpCamp</h1>
+                <nav class="navbar navbar-expand-lg navbar-dark float-end">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-masthead justify-content-center ">
+                    <% if (!currentUser) {%> 
+                    <a class="nav-link active" href="/register">Register</a>
+                    <a class="nav-link active" href="/login">Login</a>
+                    <% } else { %> 
+                    <a class="nav-link active" href="/logout">Logout</a>
+                    <% } %> 
+                </div>
+                </div>
+            </div>
+            </nav>
+            </div>
+            
+        </header>
+
+    <main class="px-3 mt-auto">
+        <h4>Welcome to yelpcamp</h4>
+        <br>
+        <p class="lead fst-italics fs-3">
+            <q>In a cool solitude of tree, where leaves and birds a music spin,
+            mind that was weary is at ease, new rhythms in the soul begins.</q>
+        </p>
+        <a href="/campgrounds" class="btn btn-danger" style="width: 10rem;">Campgrounds</a>
+    </main>
+
+    <footer class="d-flex flex justify-content-center mt-auto">
+        <p>&copy; YELP:2021</p>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+</body>
+</html>

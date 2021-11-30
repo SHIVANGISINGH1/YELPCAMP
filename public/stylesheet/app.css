@@ -1,0 +1,13 @@
+#mapCluster {
+    width:100%;
+    height: 500px;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2rem;
+}
+
